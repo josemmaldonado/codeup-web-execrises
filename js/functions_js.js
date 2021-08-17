@@ -29,3 +29,6 @@ function calculateTip(x,y){
     console.log(" ")
 }
 
+var isBlinking=(trafficColor) ? "Operation was successful": "Opps something went wrong";
+var result = (age>16) ? console.log("Is over 16") : console.log("Not over 16");
+age = 22;
