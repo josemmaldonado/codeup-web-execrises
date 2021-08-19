@@ -17,7 +17,7 @@ function analyzeColor(string){
         alert("Ghetty Green");
 
         }else if (string === "blue") {
-        alert("Your my boy blue; ");
+        alert("Your my boy blue");
 
         } else if (string === "indigo"){
         alert("Maybe indigo ate your baby.");
@@ -66,52 +66,45 @@ switch (randomColor){
 
 /* ########################################################################## */
 
-/**
- * TODO:
- * Suppose there's a promotion in Walmart, each customer is given a randomly
- * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
- * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
- * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
- * all for free!.
- *
- * Write a function named `calculateTotal` that accepts a lucky number and total
- * amount, and returns the discounted price.
- *
- * Example:
- * calculateTotal(0, 100) // returns 100
- * calculateTotal(4, 100) // returns 50
- * calculateTotal(5, 100) // returns 0
- *
- * Test your function by passing it various values and checking for the expected
- * return value.
- */
+
 function calculateTotal(luckyNumber,totalAmount){
-   var afterDiscount = totalAmount*
+    var luckyNumber = Math.floor(Math.random() * 6);
     if (luckyNumber ===0){
         console.log("No discount for you. You pay $"+totalAmount+" .")
 
 
     }else if (luckyNumber ===1){
-        console.log("You won a 10% discount which brings your total amount to $"+totalAmount+" .")
+        var luckyNumber = .1;
+        var discount = luckyNumber*totalAmount;
+        var totalAmount = totalAmount-discount;
+        console.log("You won a 10% discount which brings your total amount to $"+totalAmount+" .");
     }else if (luckyNumber ===2){
-        console.log("You won a 25% discount which brings your total to ")
+        var luckyNumber = .25;
+        var discount = luckyNumber*totalAmount;
+        var totalAmount = totalAmount-discount;
+        console.log("You won a 25% discount which brings your total to $"+totalAmount+" .");
     }else if (luckyNumber === 3){
-        console.log(" You won a 35% discount what brings your total to ")
+        var luckyNumber = .35;
+        var discount = luckyNumber*totalAmount;
+        var totalAmount = totalAmount-discount;
+        console.log(" You won a 35% discount which brings your total to $"+totalAmount+" .");
     }else if (luckyNumber === 4) {
-        console.log("You won a 50% discount which brings your total to ")
+        var luckyNumber = .5;
+        var discount = luckyNumber*totalAmount;
+        var totalAmount = totalAmount-discount;
+        console.log("You won a 50% discount which brings your total to $"+totalAmount+" .");
     }else if (luckyNumber === 5){
-        console.log("You won everything in your cart.")
+        console.log("You won everything in your cart which brings a total of "+totalAmount+ " that you saved today");
     }
 }
 /**
  * TODO:
- * Uncomment the line below to generate a random number between 0 and 6.
  * Prompt the user for their total bill, then use your `calculateTotal` function
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+
 
 /**
  * TODO:
@@ -129,3 +122,16 @@ function calculateTotal(luckyNumber,totalAmount){
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var enterANumber = confirm("Pick a number. Any number.Please.");
+    if (enterANumber = true){
+        var numberEntered = prompt("Please enter number and I'll guess what it is?")
+        var plusHundo = numberEntered+=100;
+        alert("Your number "+numberEntered+" + 100 = "+plusHundo+)
+
+        var isEvenOrOdd = numberEntered /2;
+        var numberPositiveOrNegative = numberEntered>0;
+        else if (enterANumber!= true){
+           prompt("next time")
+        }
+}
