@@ -13,9 +13,21 @@ var names = ['Leonardo', 'Donatello','Raphael','Michelangelo'];
     names.forEach(function(name) {
         console.log('Heroes in a Half-shell Turtle Power: ' + name + '.');
     });
-    names.forEach(function
+return names;
+function firstName (array) {
+return array.slice(1);
+}
 
-
-
-
+function second([]){
+}
+function last([]){
+}
 })();
+
+//create a function that takes in an array of pies baked and return the 3 most recently baked pies
+
+function lastThreeBakedPies(array){
+    return array.slice(-3);
+}
+
+
