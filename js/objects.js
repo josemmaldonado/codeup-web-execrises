@@ -30,14 +30,13 @@ console.log(person.sayHello())
          {name: 'George', amount: 320}
     ];
     console.log(shoppers)
-// loop through the array and log the values
+
 shoppers.forEach(function(shopper,amount,name) {
     console.log(shopper)
     if(shopper.amount>= 200) {
-        var discount = shopper.amount *= .12;
-        var discountAmount = shopper.amount - discount;
-        console.log(shopper.name+" amount is $"+shopper.amount+" but after the 12% discount he pays $"+discountAmount)
-        return discount, discountAmount;
+        console.log(shopper.name+" amount is $"+shopper.amount);
+        var discount = shopper.amount -(shopper.amount *= .12);
+        console.log("But after the 12% discount he pays $"+discount)
     }else
         console.log(shopper.name+ " did not qualify for the discount so he pays $"+shopper.amount);
 
