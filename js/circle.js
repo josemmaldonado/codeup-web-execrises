@@ -9,9 +9,9 @@
         getArea: function () {
             // TODO: complete this method
             var area = Math.PI * Math.pow(this.radius,2);
+                return area;
 
-            return area;
-            console.log(area)// TODO: return the proper value
+            // TODO: return the proper value
         },
 
         logInfo: function (doRounding) {
@@ -20,10 +20,10 @@
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
 
-            console.log("Area of a circle with radius: " + this.radius + ", is: ");
+            console.log("Area of a circle with radius: " + this.radius + ", is: "+circle.getArea());
         }
     };
-
+console.log(circle.getArea())
     // log info about the circle
     console.log("Raw circle information");
     circle.logInfo(false);
@@ -40,9 +40,3 @@
     circle.logInfo(true);
 })();
 
-function rollSixSided (number){
-    var diceRolled = Math.floor(Math.random() * 6) + 1;
-
-
-    console.log("You rolled a "+number+);
-}

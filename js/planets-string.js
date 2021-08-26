@@ -52,3 +52,9 @@ myCar1.features = ["Backup Camera","Heated seats","Cooler Box","Blind Spot Camar
 console.log(myCar1.features)
 var theGarage = [myCar,myCar1];
  console.log(theGarage)
+//1st - git status.
+// 2nd -  git add -A
+// 3rd -  git status.
+// 4th -  git commit -m "add the first test and solution for intro-to-testing"
+// 5th - git status, again, to make sure that all files are added and committed.
+// Finally, push your work by running git push origin main
