@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="email">Email address</label>
+        <br>
+        <input id="email" name="email" type="text" placeholder="Enter your email address">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input id="password" name="password" type="password" placeholder="Enter password">
+        <br>
+        <label for="bio">Fill out a short description of yourself</label>
+        <br>
+        <textarea id="bio" name="bio" placeholder="Fill out a short description of yourself"></textarea>
+        <br>
+        <h2>How did you hear about us?</h2>
+        <label for="billboard">
+            Billboard<input id="billboard"  name="about_us" type="radio" value="billboard">
+        </label>
+        <label for="radio_ad">
+            Radio Advertisement<input id="radio_ad"  name="about_us" type="radio" value="radio_ad">
+        </label>
+        <label for="internet_ad">
+            Internet Advertisement<input id="internet_ad" name="about_us" type="radio" value="internet_ad">
+        </label>
+        <label for="other">
+         Other<input id="other" name="about_us" type="radio" value="other">
+        </label>
+        <br>
+        <h2>Which web browser are you using?</h2>
+        <select name="web_browser">
+            <option value="chrome">Chrome</option>
+            <option value="firefox">FireFox</option>
+            <option value="explore">Internet Explorer</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

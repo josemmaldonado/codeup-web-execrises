@@ -57,30 +57,10 @@ console.log("Its "+checkDay());
 
 
 //Immediately-Invoked function expression(IIFE)
-var raduis = 5;
-var area = Math.PI * Math.pow(raduis, 2);
-console.log(area)
-var LIMIT = 10;
-
-for (var row = 1; row <= LIMIT/2; row++)
-{
-    for (var space = 1; space <= (LIMIT/2)-row; space++)
-    console.log(" ");
-
-    for (var star = 1; star <= (row*2)-1; star++)
-    console.log("*");
-
-
-}
-
-// Print bottom half of diamond
-for (int row = 1; row <= LIMIT/2; row++)
-{
-    for (int space = 1; space <= row-1; space++)
-    System.out.print (" ");
-
-    for (int star = 1; star <= LIMIT-(row*2)+1; star++)
-    System.out.print ("*");
-
-    System.out.println();
+function tellFortune(x,y,z,a){
+    var x = typeof number;
+    var y = typeof String;
+    var z = typeof String;
+    var a = typeof String;
+    return x,y,z,a;
 }
