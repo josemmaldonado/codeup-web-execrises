@@ -64,3 +64,8 @@ function tellFortune(x,y,z,a){
     var a = typeof String;
     return x,y,z,a;
 }
+
+function calulateDogAge(dogAge){
+    var dogAge = dogAge*=7;
+    return ("Your doggie is "+dogAge+ " yours old in dog years")
+}
