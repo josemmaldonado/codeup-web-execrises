@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message-info{
+    box-sizing: border-box;
+    border-radius: .5em ;
+    border: solid lightgray 1px;
+    background-color: lightskyblue;
+    font-weight: bold;
+    color: blue;
+
+    padding:.5em;
+    margin:.5em;
+
+
+}
+.message-success{
+    box-sizing: border-box;
+    border-radius: .5em;
+    border: solid lightgray 1px;
+    background-color: darkseagreen;
+    font-weight: bold;
+    color: #0fb784;
+    margin: .5em;
+    padding: .5em;
+
+
+}
+.message-warning{
+    box-sizing: border-box;
+    border-radius: .5em;
+    border: solid lightgray 1px;
+    background-color: lightyellow;
+    font-weight: bold;
+    color:yellowgreen;
+    margin: .5em;
+    padding: .5em;
+}
+.message-error{
+    box-sizing: border-box;
+    border-radius: .5em;
+    border: solid lightgray 1px;
+    background-color: lightcoral;
+    color: red;
+    margin: .5em;
+    padding: .5em;
+}
