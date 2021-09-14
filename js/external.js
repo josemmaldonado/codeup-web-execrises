@@ -37,6 +37,16 @@ var studentEnrollment= !classFull&&!scheduleConflict;
 
 
 
+function tacoTuesday([]){
+    if([]= "tacos")
+    return true;
+    else return false;
+
+
+}
+
+
+
 
 
 
