@@ -40,3 +40,27 @@ console.log(circle.getArea())
     circle.logInfo(true);
 })();
 
+//TODO: Finish coding this program. You need to stop the setInterval() method after the showTime() function has run five times
+
+
+let count = 0;
+
+function showTime() {
+
+    // return new date and time
+    let dateTime = new Date();
+
+    // return the time
+    let time = dateTime.toLocaleTimeString();
+
+    count += 1;
+if (count>=5){
+
+}
+    clearInterval(display);
+    //if the count reaches 5, stop the program.
+
+    console.log(time)
+}
+
+let display = setInterval(showTime, 5000);
