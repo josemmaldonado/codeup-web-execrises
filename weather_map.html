@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Weather Be Like </title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1 class="display-4" id="jumbo-temp">69</h1>
+    <p class="lead">Precipitation<br>Wind<br>Humidity<br>UV index</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-week-tab" data-toggle="tab" href="#nav-week" role="tab"
+                       aria-controls="nav-home" aria-selected="true">7 Day Forecast</a>
+                    <a class="nav-link" id="nav-hourly-tab" data-toggle="tab" href="#nav-hourly" role="tab"
+                       aria-controls="nav-hourly" aria-selected="false">Hourly</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-week" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="card text-center">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="weekday">weekday</li>
+                            <li class="list-group-item" id="temp-max">temp max</li>
+                            <li class="list-group-item" id="temp-min">temp min</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-hourly" role="tabpanel" aria-labelledby="nav-hourly-tab">
+                    <div class="card text-center">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Hour</li>
+                            <li class="list-group-item">temp at the hour</li>
+                            <li class="list-group-item">Chance of rain</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div id="map>">-->
+
+<!--</div>-->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous">
+<!--    <script rel="stylesheet" src="css/weather_map.css"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+
+<script src="keys.js"></script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>

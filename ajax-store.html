@@ -18,6 +18,7 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<button id="refreshButton">Refresh</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -26,30 +27,35 @@
     (function () {
         "use strict";
         // TODO: Create an AJAX GET request for the file under data/inventory.json
-        $.ajax("data/inventory.json").done(function (data, status, jqXhr) {
-            data.forEach(function (data) {
-                {
+        $('#refreshButton').click(function () {
 
-                    console.log(data);
-                    var html = "<tr>" + "<th>" + data.title + "</th>"
-                        + "<th>" + data.quantity + "</th>" +
-                        "<th>" + data.price + "</th>" +
-                        "<th>" + data.categories + "</th>"
 
-                    "</tr>"
-                    $("tbody").append(html);
-                }
-            })
+            $.ajax("data/inventory.json").done(function (data, status, jqXhr) {
+                data.forEach(function (data) {
+                    {
+
+                        console.log(data);
+                        var html = "<tr>" + "<th>" + data.title + "</th>"
+                            + "<th>" + data.quantity + "</th>" +
+                            "<th>" + data.price + "</th>" +
+                            "<th>" + data.categories + "</th>"
+
+                        "</tr>"
+                        $("tbody").append(html);
+                    }
+                })
+            });
+
+
+            // TODO: Take the data from inventory.json and append it to the products table
+            //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+            //             its contents and fields
+            //       HINT: You will want to target #insertProducts for your new HTML elements
+
         });
-
-        // TODO: Take the data from inventory.json and append it to the products table
-        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-        //             its contents and fields
-        //       HINT: You will want to target #insertProducts for your new HTML elements
-
-
     })();
 </script>
 
 </body>
 </html>
+

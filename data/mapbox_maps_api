@@ -1,0 +1,33 @@
+[
+  {
+    "restaurant": "Bohanan's Prime Steak and Seafood",
+    "atmosphere": "Upscale",
+    "categories": [
+      "Fine Dining"
+    ],
+    "price per meal":40
+  }, {
+  "restaurant": "La Fogata",
+  "atmosphere": "Casual",
+  "categories": [
+    "Casual Dining"
+  ],
+  "price per meal": 15
+},{
+  "restaurant": "Weathered Soul Brewery",
+  "atmosphere": "Casual",
+  "categories": [
+    "Brewery"
+  ],
+  "price per meal":10
+}, {
+  "restaurant": "Godai",
+  "atmosphere": "Casual",
+  "categories": [
+    "Casual Dining"
+  ],
+  "price per meal": 15
+}
+  ]
+
+
