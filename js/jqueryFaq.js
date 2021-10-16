@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('button').click(function (event) {
         event.preventDefault();
         $('ul').each(function () {
-            $(this).children().last.toggleClass('highlighted');
+            $(this).children().last().toggleClass('highlighted');
         });
     });
 });

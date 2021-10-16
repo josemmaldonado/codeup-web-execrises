@@ -1,4 +1,3 @@
-
 "use strict";
 
 /*********************************************
@@ -15,10 +14,10 @@ console.log(pokemonAPI);
 //TODO: add a method that runs if the Promise fails
 
 //TODO: In the callback function of the .then method, parse the response into JSON
-pokemonAPI.then(function (reggie){
+pokemonAPI.then(function (reggie) {
     console.log(reggie)
     // reggie.text().then((text)=>{console.log(text)});
-    reggie.json().then((reggie)=>console.log(reggie));
+    reggie.json().then((reggie) => console.log(reggie));
 })
 
 /*********************************************
@@ -36,10 +35,28 @@ pokemonAPI.then(function (reggie){
 // Let's try working with the Star Wars API!
 
 // TODO: Using Promises, make a fetch request to the Star Wars API
-
-// TODO: Use Promise chaining to console log the json response
-
+fetch('https://swapi.dev/api/films')
+    // TODO: Use Promise chaining to console log the json response
+    .then((response) => {
+        return response.json();
+    }).then((starWarsFilmsData) => {
+        console.log(starWarsFilmsData.results.forEach((film)=>{console.log(film.title)}));
+        // starWarsFilmsData.results
+    })
 // TODO: chain another method that iterates through the results array and console logs the names
 
 // TODO: Demonstrate Promise.all and Promise.race
+
+var pokemonAPI = fetch('https://pokeapi.co/api/v2/pokemon');
+let starWarsAPI =fetch('https://swapi.dev/api/films');
+
+// Promise.all([pokemonAPI, starWarsAPI])
+//     .then((responses)=>{
+//         //responses contains the resolved promises in the same order that they were passes into the all method
+//         console.log(responses[0])
+//     })
+
+Promise.race([pokemonAPI,starWarsAPI])
+    .then((response)=>{console.log(response)})
+
 
