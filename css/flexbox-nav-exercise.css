@@ -1,31 +1,37 @@
 * {
     box-sizing: border-box;
+
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-a:hover{
+a:hover {
     color: white;
     background-color: transparent;
     text-decoration: underline;
 }
-.left{
+
+.left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.right{
+
+.right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.top-footer{
+
+.top-footer {
+    margin-top: 5em;
     display: flex;
-    justify-content:space-between;
-
-
-
+    justify-content: space-between;
+}
+.logo-div{
+    text-align: center;
 }
