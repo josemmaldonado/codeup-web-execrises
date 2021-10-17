@@ -1,6 +1,55 @@
+
+
+/*Center the main heading*/
+/*Add a style to change the color of the headers on your page and make them underlined.*/
 .header
 {
     color:blue;
     text-align:center;
     text:underline;
 }
+h1{
+    font-size: 75px;
+}
+/*Add a style to change the background color of the page.*/
+/*Add a style to change the font for the entire page. Use google fonts if you would like.*/
+html{
+    background-color: lightgreen;
+    font-family: "American Typewriter" ;
+}
+/*Add a style to add a background image to your background. Search how to manipulate the position, sizing of this background image.*/
+#list-container{
+    background-image: url("/img/group-hug.jpeg");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+/*Add a style to change the list-style to something other than the default bullet.*/
+li {
+    list-style: armenian;
+}
+/*Add a style to change the table, table cells td and rows tr padding and font sizes.*/
+
+.product-table {
+    border-style: solid;
+    padding: 1em 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+/*Add a style to alter the anchor tags and its different states. (e.g. link, visited, hover and active).*/
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: darkblue;
+    font-size: 100px;
+    background-color: #FFFFFF;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+
+
