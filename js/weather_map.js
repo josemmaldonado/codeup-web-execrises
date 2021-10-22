@@ -11,13 +11,7 @@
 //
 //     return html;
 // }
-//function renderCoffees(coffees) {
-// 	var html = '';
-// 	for (var i = coffees.length - 1; i >= 0; i--) {
-// 		html += renderCoffee(coffees[i]);
-// 	}
-// 	return html;
-// }
+
 //clouds: 75
 
 // dt: 1633924800
@@ -29,7 +23,7 @@
 // uvi: 0
 
 // wind_speed: 10.76
-
+const cards = $('#card-container')
 
 $.get("https://api.openweathermap.org/data/2.5/onecall?", {
     lat: "29.4241",
@@ -41,18 +35,33 @@ $.get("https://api.openweathermap.org/data/2.5/onecall?", {
 }).done(function (data) {
     console.log(data);
 
-    // for (var i = 0; i < data.daily.length; i += 8) {
+    for (var i = 0; i < data.daily.length; i += 8) {
 
-    var timeUnixUtc = daily.dt;
-    var tempMax = daily.temp.max;
-    var tempMin = daily.temp.min;
-
-    $("#weekday").append(timeUnixUtc);
-    $("#temp-max").append(tempMax);
-    $("#temp-min").append(tempMin);
-
+        html = `
+ <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">High:${current.temp}</p>
+            <p class="card-text">Low:</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+    </div>
+</div>`
+        cards.append(html);
+    }
 })
+// for (var i = 0; i < data.daily.length; i += 8) {
 
+// var timeUnixUtc = daily.dt;
+// var tempMax = daily.temp.max;
+// var tempMin = daily.temp.min;
+//
+// $("#weekday").append(timeUnixUtc);
+// $("#temp-max").append(tempMax);
+// $("#temp-min").append(tempMin);
+
+//  <h5 className="card-title">${daily.dt}</h5>
 
 
 // for(var i = 0; i<data.current.length; i +=5) {

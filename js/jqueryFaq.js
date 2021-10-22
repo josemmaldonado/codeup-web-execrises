@@ -20,17 +20,27 @@ $(document).ready(function () {
         });
     });
 });
-$.ajax("https://hookb.in/Z2rgN2ok3JhK6bmm6bPb",{
-    type:"POST",
-    data:{
-        weekday:"Thorsday",
-        type:"week",
 
-    }
-})
-$.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data){
-    console.log(data)
-});
+
+$('h3').click(function (event) {
+    event.preventDefault();
+    $('ul').next().toggleClass("fontWeight", "bold")
+            })
+
+
+
+// }
+// $.ajax("https://hookb.in/Z2rgN2ok3JhK6bmm6bPb",{
+//     type:"POST",
+//     data:{
+//         weekday:"Thorsday",
+//         type:"week",
+//
+//     }
+// })
+// $.ajax("https://www.themealdb.com/api/json/v1/1/random.php").done(function(data){
+//     console.log(data)
+// });
 
 
 //
